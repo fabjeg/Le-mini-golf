@@ -1,5 +1,5 @@
 import { mockData } from '../../data/mock';
-import { Clock, Calendar, AlertCircle } from 'lucide-react';
+import { Clock, Calendar } from 'lucide-react';
 import './Schedule.css';
 
 const Schedule = () => {
@@ -60,7 +60,7 @@ const Schedule = () => {
                 <div className="schedule-weather-notice">
                     <p>
                         <strong>🌦️ Météo :</strong> En cas de pluie !
-                        Contactez-nous en cas de doute au <strong className="phone-number">+33 6 47 82 74 49</strong>
+                        Contactez-nous au <strong className="phone-number">+33 6 47 82 74 49</strong>
                     </p>
                 </div>
             </div>

@@ -95,7 +95,7 @@ const PracticalInfo = () => {
                                     </div>
                                     <div>
                                         <h4>En voiture</h4>
-                                        <p>Parking gratuit sur place (50 places)</p>
+                                        <p>Parking gratuit sur place</p>
                                     </div>
                                 </div>
                             </div>

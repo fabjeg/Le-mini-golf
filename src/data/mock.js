@@ -4,7 +4,7 @@ export const mockData = {
         slogan: "Amusement pour toute la famille !",
         description: "Découvrez notre parcours de mini-golf unique avec 18 trous créatifs et colorés, parfait pour passer un moment inoubliable en famille ou entre amis.",
         phone: "+33 6 47 82 74 49",
-        email: "contact@minigolf-paradise.fr",
+        email: "minigolfdugolfe@gmail.com",
         address: {
             street: "Rond point de la Vache Enragée Route de Penvins",
             city: "56450 Saint Armel",
