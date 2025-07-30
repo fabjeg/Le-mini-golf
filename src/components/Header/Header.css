@@ -16,9 +16,7 @@
 }
 
 .nav-container {
-    max-width: 1024px;
-    margin: 0 auto;
-    padding: 0 1rem;
+    margin-inline: 5%;
 }
 
 .nav-inner {
@@ -26,7 +24,6 @@
     align-items: center;
     justify-content: space-between;
     height: 4rem;
-    /* 16 * 4px */
 }
 
 .logo-section {
@@ -37,10 +34,8 @@
 
 .logo-circle {
     width: 2.5rem;
-    /* 10 * 4px */
     height: 2.5rem;
     background: linear-gradient(135deg, #34d399, #3b82f6);
-    /* green-400 to blue-500 */
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -51,15 +46,12 @@
     color: white;
     font-weight: 700;
     font-size: 1.125rem;
-    /* text-lg */
 }
 
 .logo-title {
     font-weight: 700;
     font-size: 1.25rem;
-    /* text-xl */
     background: linear-gradient(to right, #16a34a, #2563eb);
-    /* green-600 to blue-600 */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 0;
@@ -75,7 +67,6 @@
     background: none;
     border: none;
     color: #374151;
-    /* gray-700 */
     font-weight: 500;
     cursor: pointer;
     transition: color 0.2s ease, transform 0.2s ease;
@@ -84,7 +75,6 @@
 
 .nav-button:hover {
     color: #16a34a;
-    /* green-600 */
     transform: scale(1.05);
 }
 
@@ -103,7 +93,6 @@
     overflow: hidden;
     transition: max-height 0.3s ease, opacity 0.3s ease;
     border-top: 1px solid #f3f4f6;
-    /* gray-100 */
     padding: 0 1rem;
 }
 
@@ -120,7 +109,6 @@
     padding: 0.75rem 1rem;
     font-weight: 500;
     color: #374151;
-    /* gray-700 */
     cursor: pointer;
     border-radius: 0.5rem;
     transition: background-color 0.2s ease, color 0.2s ease;
@@ -129,9 +117,7 @@
 
 .mobile-nav-button:hover {
     background-color: #dcfce7;
-    /* green-50 */
     color: #16a34a;
-    /* green-600 */
 }
 
 /* Responsive */
@@ -147,6 +133,5 @@
 
     .nav-inner {
         height: 5rem;
-        /* 20 * 4px */
     }
 }

@@ -118,11 +118,6 @@ const Footer = () => {
                             <button className="bottom-link">CGV</button>
                         </div>
                     </div>
-                    <div className="bottom-right">
-                        <span>Fait avec</span>
-                        <Heart className="heart-icon" size={16} fill="currentColor" />
-                        <span>à Paris</span>
-                    </div>
                 </div>
             </div>
         </footer>

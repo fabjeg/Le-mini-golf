@@ -1,6 +1,5 @@
-import React from 'react';
 import { mockData } from '../../data/mock';
-import { Check, Star } from 'lucide-react';
+import { Check } from 'lucide-react';
 import './Pricing.css';
 
 const Pricing = () => {
@@ -24,13 +23,6 @@ const Pricing = () => {
                             key={plan.id}
                             className={`pricing-card ${plan.popular ? 'popular' : ''}`}
                         >
-                            {plan.popular && (
-                                <div className="popular-badge">
-                                    <Star size={16} fill="currentColor" />
-                                    <span>Populaire</span>
-                                </div>
-                            )}
-
                             <div className="pricing-card-content">
                                 <div className="pricing-card-header">
                                     <h3 className="plan-category">{plan.category}</h3>
@@ -49,19 +41,12 @@ const Pricing = () => {
                                         </div>
                                     ))}
                                 </div>
-
-                                <button className={`plan-button ${plan.popular ? 'btn-popular' : 'btn-default'}`}>
-                                    Choisir ce tarif
-                                </button>
                             </div>
                         </div>
                     ))}
                 </div>
 
                 <div className="pricing-footer">
-                    <p className="footer-note">
-                        <strong>Bon à savoir :</strong> Gratuit pour les enfants de moins de 3 ans accompagnés
-                    </p>
                     <p className="footer-smallprint">
                         Les tarifs incluent la location du matériel complet (club, balle) et l'accès illimité au parcours
                     </p>

@@ -96,32 +96,8 @@ const PracticalInfo = () => {
                                     <div>
                                         <h4>En voiture</h4>
                                         <p>Parking gratuit sur place (50 places)</p>
-                                        <p className="small-text">Sortie 12 de l'A1, puis suivre "Centre Loisirs"</p>
                                     </div>
                                 </div>
-
-                                <div className="contact-item">
-                                    <div className="icon-bg green-light">
-                                        <Bus size={24} className="icon-green" />
-                                    </div>
-                                    <div>
-                                        <h4>En transport</h4>
-                                        <p>Ligne 14 - Arrêt "Loisirs Park"</p>
-                                        <p className="small-text">À 2 minutes à pied de l'arrêt</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Map Placeholder */}
-                        <div className="card map-placeholder">
-                            <div className="map-content">
-                                <MapPin size={48} className="icon-gray" />
-                                <h4>Plan d'accès</h4>
-                                <p>
-                                    Centre commercial Loisirs Park<br />
-                                    Métro Ligne 14 - Station "Loisirs Park"
-                                </p>
                             </div>
                         </div>
                     </div>

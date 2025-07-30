@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay, EffectCoverflow } from 'swiper/modules';
-import { mockData } from '../../data/mock';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 
 import 'swiper/css';
@@ -11,18 +10,41 @@ import 'swiper/css/effect-coverflow';
 
 import './Gallery.css';
 
-const Gallery = () => {
-    const { gallery } = mockData;
-    const [selectedImage, setSelectedImage] = useState(null);
+// Import des images
+import img1 from '../../assets/img_1.jpg';
+import img2 from '../../assets/img_2.jpg';
+import img3 from '../../assets/img_3.jpg';
+import img4 from '../../assets/img_4.jpg';
+import img5 from '../../assets/img_5.jpg';
+import img6 from '../../assets/img_6.jpg';
+import img7 from '../../assets/img_7.jpg';
+import img8 from '../../assets/img_8.jpg';
+import img9 from '../../assets/img_9.jpg';
+import img10 from '../../assets/img_10.jpg';
+import img11 from '../../assets/img_11.jpg';
 
+// Tableau des images
+const gallery = [
+    { id: 1, url: img1, alt: "Image 1 de la galerie", title: "Image 1" },
+    { id: 2, url: img2, alt: "Image 2 de la galerie", title: "Image 2" },
+    { id: 3, url: img3, alt: "Image 3 de la galerie", title: "Image 3" },
+    { id: 4, url: img4, alt: "Image 4 de la galerie", title: "Image 4" },
+    { id: 5, url: img5, alt: "Image 5 de la galerie", title: "Image 5" },
+    { id: 6, url: img6, alt: "Image 6 de la galerie", title: "Image 6" },
+    { id: 7, url: img7, alt: "Image 7 de la galerie", title: "Image 7" },
+    { id: 8, url: img8, alt: "Image 8 de la galerie", title: "Image 8" },
+    { id: 9, url: img9, alt: "Image 9 de la galerie", title: "Image 9" },
+    { id: 10, url: img10, alt: "Image 10 de la galerie", title: "Image 10" },
+    { id: 11, url: img11, alt: "Image 11 de la galerie", title: "Image 11" },
+];
+
+const Gallery = () => {
+    const [selectedImage, setSelectedImage] = useState(null);
     const openLightbox = (image) => setSelectedImage(image);
     const closeLightbox = () => setSelectedImage(null);
 
-    // refs pour navigation
     const prevRef = useRef(null);
     const nextRef = useRef(null);
-
-    // état pour activer navigation quand refs sont prêts
     const [navReady, setNavReady] = useState(false);
 
     useEffect(() => {
@@ -68,10 +90,7 @@ const Gallery = () => {
                     >
                         {gallery.map((image) => (
                             <SwiperSlide key={image.id}>
-                                <div
-                                    className="gallery-slide"
-                                    onClick={() => openLightbox(image)}
-                                >
+                                <div className="gallery-slide" onClick={() => openLightbox(image)}>
                                     <img src={image.url} alt={image.alt} className="gallery-image" />
                                     <div className="gallery-overlay">
                                         <div className="gallery-overlay-text">
@@ -94,7 +113,7 @@ const Gallery = () => {
 
                 {selectedImage && (
                     <div className="lightbox-backdrop" onClick={closeLightbox}>
-                        <div className="lightbox-content" onClick={e => e.stopPropagation()}>
+                        <div className="lightbox-content" onClick={(e) => e.stopPropagation()}>
                             <button onClick={closeLightbox} className="lightbox-close" aria-label="Fermer">
                                 <X size={24} />
                             </button>

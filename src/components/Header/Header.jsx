@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import './Header.css'; // Import du fichier CSS classique
+import './Header.css';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,7 +39,7 @@ const Header = () => {
                         <div className="logo-circle">
                             <span className="logo-text">MG</span>
                         </div>
-                        <h1 className="logo-title">Mini-Golf Paradise</h1>
+                        <h1 className="logo-title">Le Mini Golf Du Golfe Du Morbihan</h1>
                     </div>
 
                     {/* Desktop Navigation */}

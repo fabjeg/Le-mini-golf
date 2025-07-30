@@ -1,4 +1,3 @@
-import React from 'react';
 import { mockData } from '../../data/mock';
 import './Hero.css';
 
@@ -17,7 +16,7 @@ const Hero = () => {
             {/* Background Image with Overlay */}
             <div className="hero-bg-container">
                 <img
-                    src="https://images.pexels.com/photos/2048892/pexels-photo-2048892.jpeg"
+                    src="https://www.golfedumorbihan.bzh/content/uploads/2021/01/alamoureux@OTGolfe17_DRN_0567.jpg"
                     alt="Parcours de mini-golf coloré vue aérienne"
                     className="hero-bg-image"
                 />
@@ -27,8 +26,8 @@ const Hero = () => {
             {/* Content */}
             <div className="hero-content">
                 <h1 className="hero-title">
-                    <span className="hero-gradient-text">Mini-Golf</span>
-                    <span className="hero-white-text">Paradise</span>
+                    <span className="hero-gradient-text">Le Mini Golf</span>
+                    <span className="hero-white-text">Du Golfe Du Morbihan</span>
                 </h1>
 
                 <p className="hero-slogan">{siteInfo.slogan}</p>
@@ -43,13 +42,6 @@ const Hero = () => {
                     <button onClick={() => scrollToSection('galerie')} className="btn-secondary">
                         Découvrir le Parcours
                     </button>
-                </div>
-            </div>
-
-            {/* Scroll Indicator */}
-            <div className="scroll-indicator">
-                <div className="scroll-indicator-border">
-                    <div className="scroll-indicator-dot"></div>
                 </div>
             </div>
         </section>

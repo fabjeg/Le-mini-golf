@@ -42,7 +42,7 @@ const Schedule = () => {
                     ))}
                 </div>
 
-                <div className="schedule-important-notes">
+                {/* <div className="schedule-important-notes">
                     <div className="important-notes-header">
                         <AlertCircle size={24} className="icon-yellow" />
                         <h3>Informations importantes</h3>
@@ -55,12 +55,12 @@ const Schedule = () => {
                             </div>
                         ))}
                     </div>
-                </div>
+                </div> */}
 
                 <div className="schedule-weather-notice">
                     <p>
-                        <strong>🌦️ Météo :</strong> En cas de forte pluie, notre parcours couvert reste ouvert !
-                        Contactez-nous en cas de doute au <strong className="phone-number">+33 1 23 45 67 89</strong>
+                        <strong>🌦️ Météo :</strong> En cas de pluie !
+                        Contactez-nous en cas de doute au <strong className="phone-number">+33 6 47 82 74 49</strong>
                     </p>
                 </div>
             </div>
