@@ -1,5 +1,5 @@
 import { mockData } from '../../data/mock';
-import { MapPin, Phone, Mail, Car, Bus, Clock } from 'lucide-react';
+import { MapPin, Phone, Mail, Car, Clock } from 'lucide-react';
 import './PracticalInfo.css';
 
 const PracticalInfo = () => {
@@ -71,7 +71,7 @@ const PracticalInfo = () => {
                             <div className="card white-border">
                                 <Clock size={32} className="icon-green mb-1" />
                                 <h4>Durée moyenne</h4>
-                                <p>45 minutes à 1h30</p>
+                                <p>45 mn à 1h30</p>
                             </div>
                             <div className="card white-border">
                                 <div className="emoji-green mb-1">🎯</div>

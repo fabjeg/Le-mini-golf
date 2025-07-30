@@ -15,7 +15,7 @@ const Presentation = () => {
                             <h2 className="presentation-title">
                                 Découvrez notre
                                 <span className="presentation-gradient-text">
-                                    Mini-Golf Unique
+                                    Mini Golf Unique
                                 </span>
                             </h2>
                             <p className="presentation-description">{siteInfo.description}</p>

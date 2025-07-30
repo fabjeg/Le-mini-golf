@@ -1,4 +1,3 @@
-// Mock data for mini-golf website
 export const mockData = {
     siteInfo: {
         name: "Le Mini Golf Du Golfe Du Morbihan",
@@ -18,13 +17,13 @@ export const mockData = {
             id: 4,
             category: "Pour les petits",
             price: "4€",
-            description: "moin de 7 ans",
+            description: "moins de 7 ans",
             features: []
         },
         {
             id: 2,
             category: "Pour les moyens",
-            price: "5.5€",
+            price: "5.50€",
             description: "7 à 15 ans",
             features: []
         },

@@ -36,9 +36,6 @@ const Hero = () => {
 
                 {/* Call-to-Action Buttons */}
                 <div className="hero-buttons">
-                    <button onClick={() => scrollToSection('tarifs')} className="btn-primary">
-                        Voir nos Tarifs
-                    </button>
                     <button onClick={() => scrollToSection('galerie')} className="btn-secondary">
                         Découvrir le Parcours
                     </button>
