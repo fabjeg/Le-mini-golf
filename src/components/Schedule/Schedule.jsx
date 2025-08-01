@@ -1,4 +1,4 @@
-import { Calendar, Clock } from 'lucide-react';
+import { Calendar, Clock, Phone } from 'lucide-react';
 import { mockData } from '../../data/mock';
 import './Schedule.css';
 
@@ -38,10 +38,11 @@ const Schedule = () => {
                                 <div className="weather-alert">
                                     <span role="img" aria-label="pluie">🌧️</span>
                                     <span className="weather-text">
-                                        En cas de pluie, vous pouvez nous appeler au&nbsp;
+                                        En cas de pluie, vous pouvez nous appeler
                                     </span>
-                                    <a href="tel:+33647827449" className="weather-call-button">
-                                        +33 6 47 82 74 49
+                                    <a href="tel:+33647827449" className="weather-call-button" aria-label="Appeler le mini golf">
+                                        <span className="phone-text">+33 6 47 82 74 49</span>
+                                        <Phone size={20} className="phone-icon" />
                                     </a>
                                 </div>
                             )}
