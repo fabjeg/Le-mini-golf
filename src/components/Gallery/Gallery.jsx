@@ -22,20 +22,22 @@ import img8 from '../../assets/img_8.jpg';
 import img9 from '../../assets/img_9.jpg';
 import img10 from '../../assets/img_10.jpg';
 import img11 from '../../assets/img_11.jpg';
+import img12 from '../../assets/img_12.jpg';
 
 // Tableau des images
 const gallery = [
-    { id: 1, url: img1, alt: "Image 1 de la galerie", title: "Image 1" },
-    { id: 2, url: img2, alt: "Image 2 de la galerie", title: "Image 2" },
-    { id: 3, url: img3, alt: "Image 3 de la galerie", title: "Image 3" },
-    { id: 4, url: img4, alt: "Image 4 de la galerie", title: "Image 4" },
-    { id: 5, url: img5, alt: "Image 5 de la galerie", title: "Image 5" },
-    { id: 6, url: img6, alt: "Image 6 de la galerie", title: "Image 6" },
-    { id: 7, url: img7, alt: "Image 7 de la galerie", title: "Image 7" },
-    { id: 8, url: img8, alt: "Image 8 de la galerie", title: "Image 8" },
-    { id: 9, url: img9, alt: "Image 9 de la galerie", title: "Image 9" },
-    { id: 10, url: img10, alt: "Image 10 de la galerie", title: "Image 10" },
-    { id: 11, url: img11, alt: "Image 11 de la galerie", title: "Image 11" },
+    { id: 1, url: img1, alt: "Image 1 de la galerie" },
+    { id: 2, url: img2, alt: "Image 2 de la galerie" },
+    { id: 3, url: img3, alt: "Image 3 de la galerie" },
+    { id: 4, url: img4, alt: "Image 4 de la galerie" },
+    { id: 5, url: img5, alt: "Image 5 de la galerie" },
+    { id: 6, url: img6, alt: "Image 6 de la galerie" },
+    { id: 7, url: img7, alt: "Image 7 de la galerie" },
+    { id: 8, url: img8, alt: "Image 8 de la galerie" },
+    { id: 9, url: img9, alt: "Image 9 de la galerie" },
+    { id: 10, url: img10, alt: "Image 10 de la galerie" },
+    { id: 11, url: img11, alt: "Image 11 de la galerie" },
+    { id: 12, url: img12, alt: "Image 11 de la galerie" },
 ];
 
 const Gallery = () => {

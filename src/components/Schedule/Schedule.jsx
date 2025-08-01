@@ -1,9 +1,9 @@
+import { Calendar, Clock } from 'lucide-react';
 import { mockData } from '../../data/mock';
-import { Clock, Calendar } from 'lucide-react';
 import './Schedule.css';
 
 const Schedule = () => {
-    const { schedule } = mockData;
+    const { periods } = mockData.schedule;
 
     return (
         <section id="horaires" className="schedule-section">
@@ -17,52 +17,39 @@ const Schedule = () => {
                     </p>
                 </div>
 
-                <div className="schedule-periods">
-                    {schedule.periods.map((period, index) => (
-                        <div key={index} className="schedule-period-card">
-                            <div className="schedule-period-header">
-                                <div className="icon-circle calendar-icon">
-                                    <Calendar size={24} className="icon-white" />
-                                </div>
-                                <h3 className="schedule-period-title">{period.title}</h3>
-                            </div>
+                <div className="schedule-list">
+                    {periods.map((period, index) => (
+                        <div key={index} className="schedule-list-item">
+                            <div className="schedule-list-header">
+                                <Calendar size={20} className="icon-green" />
+                                <h3>{period.title}</h3>
 
-                            <div className="schedule-hours-list">
-                                {period.hours.map((item, idx) => (
-                                    <div key={idx} className="schedule-hour-item">
-                                        <div className="schedule-hour-day">
-                                            <Clock size={20} className="icon-green" />
-                                            <span className="day-text">{item.day}</span>
-                                        </div>
-                                        <span className="hour-text">{item.hours}</span>
-                                    </div>
-                                ))}
                             </div>
+                            <ul>
+                                {period.hours.map((item, idx) => (
+                                    <li key={idx}>
+                                        <Clock size={18} className="icon-green" />
+                                        <span className="day">{item.day}</span> :{' '}
+                                        <span className="hour">{item.hours}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                            {period.showWeatherNotice && (
+                                <div className="weather-alert">
+                                    <span role="img" aria-label="pluie">🌧️</span>
+                                    <span className="weather-text">
+                                        En cas de pluie, vous pouvez nous appeler au&nbsp;
+                                    </span>
+                                    <a href="tel:+33647827449" className="weather-call-button">
+                                        +33 6 47 82 74 49
+                                    </a>
+                                </div>
+                            )}
                         </div>
                     ))}
                 </div>
 
-                {/* <div className="schedule-important-notes">
-                    <div className="important-notes-header">
-                        <AlertCircle size={24} className="icon-yellow" />
-                        <h3>Informations importantes</h3>
-                    </div>
-                    <div className="important-notes-list">
-                        {schedule.notes.map((note, index) => (
-                            <div key={index} className="important-note-item">
-                                <div className="yellow-dot"></div>
-                                <span>{note}</span>
-                            </div>
-                        ))}
-                    </div>
-                </div> */}
 
-                <div className="schedule-weather-notice">
-                    <p>
-                        <strong>🌦️ Météo :</strong> En cas de pluie !
-                        Contactez-nous au <strong className="phone-number">+33 6 47 82 74 49</strong>
-                    </p>
-                </div>
             </div>
         </section>
     );

@@ -1,6 +1,7 @@
 .schedule-section {
     padding: 5rem 1rem;
     background-color: #ffffff;
+    /* fond blanc */
 }
 
 .schedule-container {
@@ -11,7 +12,7 @@
 }
 
 .schedule-header {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .schedule-title {
@@ -35,159 +36,112 @@
     margin: 0 auto;
 }
 
-.schedule-periods {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    max-width: 768px;
-    margin: 0 auto 3rem;
-}
-
-@media (min-width: 1024px) {
-    .schedule-periods {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-.schedule-period-card {
-    background: linear-gradient(135deg, #d9f99d, #60a5fa);
-    border-radius: 2rem;
-    padding: 2rem;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
-    cursor: default;
-}
-
-.schedule-period-card:hover {
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-}
-
-.schedule-period-header {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-    justify-content: center;
-}
-
-.icon-circle {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.calendar-icon {
-    background: linear-gradient(90deg, #22c55e, #3b82f6);
-}
-
-.icon-white {
-    color: white;
-}
-
-.schedule-period-title {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #111827;
-    margin: 0;
-}
-
-.schedule-hours-list {
+.schedule-list {
+    text-align: left;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
+    max-width: 768px;
+    margin: 0 auto;
 }
 
-.schedule-hour-item {
-    background: white;
-    border-radius: 1rem;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
-    padding: 1rem 1.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.schedule-list-item {
+    padding: 1rem 0;
+    border-bottom: 1px solid #e5e7eb;
+    /* ligne de séparation grise claire */
 }
 
-.schedule-hour-day {
+.schedule-list-header {
     display: flex;
     align-items: center;
     gap: 0.75rem;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
 }
 
-.icon-green {
-    color: #16a34a;
+.schedule-list-header h3 {
+    font-size: 1.25rem;
+    color: #111827;
+    font-weight: 700;
+    margin: 0;
 }
 
-.day-text {
+.weather-alert {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.9rem;
+    color: #2a5d34;
+}
+
+.weather-text {
+    font-style: italic;
+}
+
+.weather-call-button {
+    color: #2a5d34;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+.schedule-list-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.schedule-list-item li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #374151;
+}
+
+.day {
     font-weight: 600;
     color: #1f2937;
+    margin-left: 0.25rem;
 }
 
-.hour-text {
-    font-size: 1.125rem;
+.hour {
     font-weight: 700;
     background: linear-gradient(90deg, #16a34a, #2563eb);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-left: 0.5rem;
 }
 
-.schedule-important-notes {
-    background-color: #fef3c7;
-    border: 1px solid #fde68a;
-    border-radius: 2rem;
-    padding: 2rem;
-    max-width: 768px;
-    margin: 0 auto 2rem;
+.schedule-notes {
+    border-left: 4px solid #ca8a04;
+    padding: 1rem 1.5rem;
+    margin: 3rem auto;
     text-align: left;
+    max-width: 768px;
 }
 
-.important-notes-header {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
-}
-
-.icon-yellow {
+.schedule-notes h4 {
+    margin-top: 0;
+    font-weight: 700;
     color: #ca8a04;
 }
 
-.important-notes-header h3 {
-    font-weight: 700;
-    color: #111827;
-    margin: 0;
+.schedule-notes ul {
+    padding-left: 1.2rem;
+    margin: 0.5rem 0 0;
 }
 
-.important-notes-list {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-}
-
-.important-note-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.75rem;
-    color: #374151;
-}
-
-.yellow-dot {
-    width: 0.5rem;
-    height: 0.5rem;
-    background-color: #ca8a04;
-    border-radius: 50%;
-    margin-top: 0.5rem;
-    flex-shrink: 0;
+.schedule-notes li {
+    margin-bottom: 0.5rem;
+    color: #4b5563;
 }
 
 .schedule-weather-notice {
     max-width: 768px;
-    margin: 0 auto;
-    padding: 1.5rem 2rem;
-    background: linear-gradient(90deg, #eff6ff, #bbf7d0);
-    border-radius: 1.25rem;
+    margin: 2rem auto 0;
+    padding: 1rem;
     text-align: center;
     color: #374151;
     font-size: 1rem;
@@ -196,4 +150,27 @@
 .phone-number {
     color: #16a34a;
     font-weight: 700;
+}
+
+.icon-green {
+    color: #16a34a;
+}
+
+.schedule-weather-notice {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    color: #2a5d34;
+    /* vert foncé */
+}
+
+.schedule-weather-notice a {
+    color: #2a5d34;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.schedule-weather-notice a:hover {
+    color: #1e3d1a;
+    /* couleur un peu plus foncée au survol */
 }
