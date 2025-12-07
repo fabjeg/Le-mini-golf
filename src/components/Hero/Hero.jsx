@@ -22,7 +22,7 @@ const Hero = () => {
                     className="hero-bg-image"
                     width="2311"
                     height="1562"
-                    fetchpriority="high"
+                    fetchPriority="high"
                 />
                 <div className="hero-bg-overlay"></div>
             </div>
