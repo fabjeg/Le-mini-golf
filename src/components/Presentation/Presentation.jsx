@@ -51,6 +51,7 @@ const Presentation = () => {
                                 src={picture}
                                 alt="Joueur profitant du parcours de mini-golf"
                                 className="presentation-image"
+                                loading="lazy"
                             />
                             <div className="image-gradient-overlay"></div>
                         </div>

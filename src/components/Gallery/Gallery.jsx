@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay, EffectCoverflow } from 'swiper/modules';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
@@ -93,7 +93,7 @@ const Gallery = () => {
                         {gallery.map((image) => (
                             <SwiperSlide key={image.id}>
                                 <div className="gallery-slide" onClick={() => openLightbox(image)}>
-                                    <img src={image.url} alt={image.alt} className="gallery-image" />
+                                    <img src={image.url} alt={image.alt} className="gallery-image" loading="lazy" />
                                     <div className="gallery-overlay">
                                         <div className="gallery-overlay-text">
                                             <h3>{image.title}</h3>
