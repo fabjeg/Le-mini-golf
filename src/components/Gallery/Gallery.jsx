@@ -76,7 +76,7 @@ const Gallery = () => {
                         pagination={{ clickable: true, dynamicBullets: true }}
                         navigation={navReady ? { prevEl: prevRef.current, nextEl: nextRef.current } : false}
                         effect="coverflow"
-                        coverflowEffect={{ rotate: 20, stretch: 0, depth: 100, modifier: 1, slideShadows: true }}
+                        coverflowEffect={{ rotate: 20, stretch: 0, depth: 100, modifier: 1, slideShadows: false }}
                         breakpoints={{
                             640: { slidesPerView: 1.2 },
                             768: { slidesPerView: 1.5 },
@@ -89,6 +89,7 @@ const Gallery = () => {
                             }
                         }}
                         className="gallery-swiper"
+                        watchSlidesProgress={false}
                     >
                         {gallery.map((image) => (
                             <SwiperSlide key={image.id}>
