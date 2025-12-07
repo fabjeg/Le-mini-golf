@@ -26,18 +26,18 @@ import img12 from '../../assets/img_12.jpg';
 
 // Tableau des images
 const gallery = [
-    { id: 1, url: img1, alt: "Image 1 de la galerie" },
-    { id: 2, url: img2, alt: "Image 2 de la galerie" },
-    { id: 3, url: img3, alt: "Image 3 de la galerie" },
-    { id: 4, url: img4, alt: "Image 4 de la galerie" },
-    { id: 5, url: img5, alt: "Image 5 de la galerie" },
-    { id: 6, url: img6, alt: "Image 6 de la galerie" },
-    { id: 7, url: img7, alt: "Image 7 de la galerie" },
-    { id: 8, url: img8, alt: "Image 8 de la galerie" },
-    { id: 9, url: img9, alt: "Image 9 de la galerie" },
-    { id: 10, url: img10, alt: "Image 10 de la galerie" },
-    { id: 11, url: img11, alt: "Image 11 de la galerie" },
-    { id: 12, url: img12, alt: "Image 11 de la galerie" },
+    { id: 1, url: img1, alt: "Parcours de mini-golf coloré avec obstacles créatifs" },
+    { id: 2, url: img2, alt: "Trou de mini-golf thématique au parcours du Golfe du Morbihan" },
+    { id: 3, url: img3, alt: "Famille jouant au mini-golf à Saint Armel" },
+    { id: 4, url: img4, alt: "Obstacle original sur le parcours de mini-golf" },
+    { id: 5, url: img5, alt: "Vue d'ensemble du parcours de mini-golf 18 trous" },
+    { id: 6, url: img6, alt: "Trou de mini-golf avec décoration maritime" },
+    { id: 7, url: img7, alt: "Activité mini-golf en famille dans le Morbihan" },
+    { id: 8, url: img8, alt: "Parcours de mini-golf adapté aux enfants" },
+    { id: 9, url: img9, alt: "Zone de jeu du mini-golf du Golfe du Morbihan" },
+    { id: 10, url: img10, alt: "Mini-golf Saint Armel - loisir pour tous les âges" },
+    { id: 11, url: img11, alt: "Trou créatif du parcours de mini-golf breton" },
+    { id: 12, url: img12, alt: "Obstacle ludique sur le parcours de 18 trous" },
 ];
 
 const Gallery = () => {

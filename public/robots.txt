@@ -1,0 +1,9 @@
+# Robots.txt pour Le Mini Golf Du Golfe Du Morbihan
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://leminigolfdugolfedumorbihan.fr/sitemap.xml
+
+# Crawl-delay pour éviter la surcharge
+Crawl-delay: 1
