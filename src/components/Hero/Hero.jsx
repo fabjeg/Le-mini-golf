@@ -1,5 +1,6 @@
 import { mockData } from '../../data/mock';
 import './Hero.css';
+import heroImage from '../../assets/golfe_du_morbihan-converti-depuis-jpg.webp';
 
 const Hero = () => {
     const { siteInfo } = mockData;
@@ -16,7 +17,7 @@ const Hero = () => {
             {/* Background Image with Overlay */}
             <div className="hero-bg-container">
                 <img
-                    src="https://www.golfedumorbihan.bzh/content/uploads/2021/01/alamoureux@OTGolfe17_DRN_0567.jpg"
+                    src={heroImage}
                     alt="Parcours de mini-golf coloré vue aérienne"
                     className="hero-bg-image"
                 />

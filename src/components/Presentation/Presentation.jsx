@@ -1,6 +1,6 @@
 import { mockData } from '../../data/mock';
 import './Presentation.css';
-import picture from '../../assets/img_9.jpg'
+import picture from '../../assets/img_9-converti-depuis-jpg.webp'
 
 const Presentation = () => {
     const { siteInfo } = mockData;

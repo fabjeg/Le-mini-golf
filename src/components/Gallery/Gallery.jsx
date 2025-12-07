@@ -11,18 +11,18 @@ import 'swiper/css/effect-coverflow';
 import './Gallery.css';
 
 // Import des images
-import img1 from '../../assets/img_1.jpg';
-import img2 from '../../assets/img_2.jpg';
-import img3 from '../../assets/img_3.jpg';
-import img4 from '../../assets/img_4.jpg';
-import img5 from '../../assets/img_5.jpg';
-import img6 from '../../assets/img_6.jpg';
-import img7 from '../../assets/img_7.jpg';
-import img8 from '../../assets/img_8.jpg';
-import img9 from '../../assets/img_9.jpg';
-import img10 from '../../assets/img_10.jpg';
-import img11 from '../../assets/img_11.jpg';
-import img12 from '../../assets/img_12.jpg';
+import img1 from '../../assets/img_1-converti-depuis-jpg.webp';
+import img2 from '../../assets/img_2-converti-depuis-jpg.webp';
+import img3 from '../../assets/img_3-converti-depuis-jpg.webp';
+import img4 from '../../assets/img_4-converti-depuis-jpg.webp';
+import img5 from '../../assets/img_5-converti-depuis-jpg.webp';
+import img6 from '../../assets/img_6-converti-depuis-jpg.webp';
+import img7 from '../../assets/img_7-converti-depuis-jpg.webp';
+import img8 from '../../assets/img_8-converti-depuis-jpg.webp';
+import img9 from '../../assets/img_9-converti-depuis-jpg.webp';
+import img10 from '../../assets/img_10-converti-depuis-jpg.webp';
+import img11 from '../../assets/img_11-converti-depuis-jpg.webp';
+import img12 from '../../assets/img_12-converti-depuis-jpg.webp';
 
 // Tableau des images
 const gallery = [
