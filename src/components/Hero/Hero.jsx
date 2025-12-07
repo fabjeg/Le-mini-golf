@@ -20,6 +20,9 @@ const Hero = () => {
                     src={heroImage}
                     alt="Parcours de mini-golf coloré vue aérienne"
                     className="hero-bg-image"
+                    width="2311"
+                    height="1562"
+                    fetchpriority="high"
                 />
                 <div className="hero-bg-overlay"></div>
             </div>
