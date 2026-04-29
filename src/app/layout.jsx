@@ -15,6 +15,9 @@ export const metadata = {
     keywords:
         'mini golf, Saint Armel, Golfe du Morbihan, mini-golf Morbihan, loisirs famille Bretagne, activité enfants 56, parcours 18 trous, mini golf Vannes, Sarzeau loisirs',
     authors: [{ name: 'Le Mini Golf Du Golfe Du Morbihan' }],
+    verification: {
+        google: 'OF1ZDi1aCWmr5-z9jln2h6eMm_EDxowVBsjuj7yHkLc',
+    },
     robots: { index: true, follow: true },
     alternates: {
         canonical: 'https://leminigolfdugolfedumorbihan.fr',
