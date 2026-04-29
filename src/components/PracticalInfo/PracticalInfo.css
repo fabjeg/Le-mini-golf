@@ -284,3 +284,21 @@
         grid-template-columns: 1fr 1fr;
     }
 }
+
+@media (max-width: 480px) {
+    .quick-info-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-card {
+        padding: 2rem 1.25rem;
+    }
+
+    .cta-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+}

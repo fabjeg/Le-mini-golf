@@ -1,3 +1,6 @@
+'use client';
+
+import Image from 'next/image';
 import { mockData } from '../../data/mock';
 import './Hero.css';
 import heroImage from '../../assets/golfe_du_morbihan-converti-depuis-jpg.webp';
@@ -16,13 +19,13 @@ const Hero = () => {
         <section className="hero-section">
             {/* Background Image with Overlay */}
             <div className="hero-bg-container">
-                <img
+                <Image
                     src={heroImage}
                     alt="Parcours de mini-golf coloré vue aérienne"
                     className="hero-bg-image"
-                    width="2311"
-                    height="1562"
-                    fetchPriority="high"
+                    fill
+                    priority
+                    sizes="100vw"
                 />
                 <div className="hero-bg-overlay"></div>
             </div>

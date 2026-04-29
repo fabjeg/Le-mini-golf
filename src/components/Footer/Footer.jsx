@@ -1,3 +1,5 @@
+'use client';
+
 import { mockData } from '../../data/mock';
 import { Facebook, Instagram, Twitter, Heart } from 'lucide-react';
 import './Footer.css';
@@ -38,7 +40,7 @@ const Footer = () => {
                                 <span className="logo-text">MG</span>
                             </div>
                             <div>
-                                <h3 className="site-name">{siteInfo.name}</h3>
+                                <p className="site-name">{siteInfo.name}</p>
                                 <p className="site-slogan">{siteInfo.slogan}</p>
                             </div>
                         </div>
@@ -61,7 +63,7 @@ const Footer = () => {
 
                     {/* Contact Info */}
                     <div className="footer-contact">
-                        <h4 className="footer-title">Contact</h4>
+                        <h3 className="footer-title">Contact</h3>
                         <div className="contact-details">
                             <div>
                                 <p className="contact-label">Adresse</p>
@@ -87,7 +89,7 @@ const Footer = () => {
 
                     {/* Quick Links */}
                     <div className="footer-nav">
-                        <h4 className="footer-title">Navigation</h4>
+                        <h3 className="footer-title">Navigation</h3>
                         <div className="nav-links">
                             {[
                                 { label: 'Présentation', id: 'presentation' },

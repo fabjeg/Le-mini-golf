@@ -1,6 +1,7 @@
+import Image from 'next/image';
 import { mockData } from '../../data/mock';
 import './Presentation.css';
-import picture from '../../assets/img_9-converti-depuis-jpg.webp'
+import picture from '../../assets/img_9-converti-depuis-jpg.webp';
 
 const Presentation = () => {
     const { siteInfo } = mockData;
@@ -47,13 +48,12 @@ const Presentation = () => {
                     {/* Image */}
                     <div className="presentation-image-wrapper">
                         <div className="presentation-image-container">
-                            <img
+                            <Image
                                 src={picture}
                                 alt="Joueur profitant du parcours de mini-golf"
                                 className="presentation-image"
                                 loading="lazy"
-                                width="1345"
-                                height="1200"
+                                sizes="(max-width: 768px) 100vw, 50vw"
                             />
                             <div className="image-gradient-overlay"></div>
                         </div>

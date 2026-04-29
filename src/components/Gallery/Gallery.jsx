@@ -1,7 +1,10 @@
+'use client';
+
 import { useState, useRef, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay, EffectCoverflow } from 'swiper/modules';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
+import Image from 'next/image';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -10,7 +13,6 @@ import 'swiper/css/effect-coverflow';
 
 import './Gallery.css';
 
-// Import des images
 import img1 from '../../assets/img_1-converti-depuis-jpg.webp';
 import img2 from '../../assets/img_2-converti-depuis-jpg.webp';
 import img3 from '../../assets/img_3-converti-depuis-jpg.webp';
@@ -24,7 +26,6 @@ import img10 from '../../assets/img_10-converti-depuis-jpg.webp';
 import img11 from '../../assets/img_11-converti-depuis-jpg.webp';
 import img12 from '../../assets/img_12-converti-depuis-jpg.webp';
 
-// Tableau des images
 const gallery = [
     { id: 1, url: img1, alt: "Parcours de mini-golf coloré avec obstacles créatifs" },
     { id: 2, url: img2, alt: "Trou de mini-golf thématique au parcours du Golfe du Morbihan" },
@@ -94,10 +95,16 @@ const Gallery = () => {
                         {gallery.map((image) => (
                             <SwiperSlide key={image.id}>
                                 <div className="gallery-slide" onClick={() => openLightbox(image)}>
-                                    <img src={image.url} alt={image.alt} className="gallery-image" loading="lazy" />
+                                    <Image
+                                        src={image.url}
+                                        alt={image.alt}
+                                        className="gallery-image"
+                                        fill
+                                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 60vw, 45vw"
+                                        loading="lazy"
+                                    />
                                     <div className="gallery-overlay">
                                         <div className="gallery-overlay-text">
-                                            <h3>{image.title}</h3>
                                             <p>Cliquez pour agrandir</p>
                                         </div>
                                     </div>
@@ -120,10 +127,12 @@ const Gallery = () => {
                             <button onClick={closeLightbox} className="lightbox-close" aria-label="Fermer">
                                 <X size={24} />
                             </button>
-                            <img src={selectedImage.url} alt={selectedImage.alt} className="lightbox-image" />
-                            <div className="lightbox-caption">
-                                <h3>{selectedImage.title}</h3>
-                            </div>
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img
+                                src={selectedImage.url.src}
+                                alt={selectedImage.alt}
+                                className="lightbox-image"
+                            />
                         </div>
                     </div>
                 )}

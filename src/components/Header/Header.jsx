@@ -1,3 +1,5 @@
+'use client';
+
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import './Header.css';
@@ -39,7 +41,7 @@ const Header = () => {
                         <div className="logo-circle">
                             <span className="logo-text">MG</span>
                         </div>
-                        <h1 className="logo-title">Le Mini Golf Du Golfe Du Morbihan</h1>
+                        <span className="logo-title">Le Mini Golf Du Golfe Du Morbihan</span>
                     </div>
 
                     {/* Desktop Navigation */}
