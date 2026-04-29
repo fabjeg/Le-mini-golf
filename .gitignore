@@ -23,5 +23,9 @@ dist-ssr
 *.sln
 *.sw?
 
+# Next.js
+.next/
+out/
+
 # Claude Code
 .claude/
