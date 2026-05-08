@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { mockData } from '../../data/mock';
 import './Presentation.css';
-import picture from '../../assets/img_9-converti-depuis-jpg.webp';
+import picture from '../../assets/img_17.jpeg';
 
 const Presentation = () => {
     const { siteInfo } = mockData;

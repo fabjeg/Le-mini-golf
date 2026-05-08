@@ -25,8 +25,24 @@ import img9 from '../../assets/img_9-converti-depuis-jpg.webp';
 import img10 from '../../assets/img_10-converti-depuis-jpg.webp';
 import img11 from '../../assets/img_11-converti-depuis-jpg.webp';
 import img12 from '../../assets/img_12-converti-depuis-jpg.webp';
+import img13 from '../../assets/img_13.jpeg';
+import img14 from '../../assets/img_14.jpeg';
+import img15 from '../../assets/img_15.jpeg';
+import img16 from '../../assets/img_16.jpeg';
+import img17 from '../../assets/img_17.jpeg';
+import img18 from '../../assets/img_18.jpeg';
+import img19 from '../../assets/img_19.jpeg';
+import img20 from '../../assets/img_20.jpeg';
 
 const gallery = [
+    { id: 13, url: img13, alt: "Vue d'ensemble du parcours de mini-golf en plein air" },
+    { id: 14, url: img14, alt: "Joueurs au mini-golf au coucher du soleil" },
+    { id: 15, url: img15, alt: "Groupe jouant au mini-golf en soirée" },
+    { id: 16, url: img16, alt: "Enfant jouant au mini-golf sur le parcours bleu" },
+    { id: 17, url: img17, alt: "Partie de mini-golf en famille dans le Morbihan" },
+    { id: 18, url: img18, alt: "Étang et canards dans le cadre du mini-golf" },
+    { id: 19, url: img19, alt: "Famille avec enfants profitant du mini-golf" },
+    { id: 20, url: img20, alt: "Duo de joueuses sur le parcours de mini-golf" },
     { id: 1, url: img1, alt: "Parcours de mini-golf coloré avec obstacles créatifs" },
     { id: 2, url: img2, alt: "Trou de mini-golf thématique au parcours du Golfe du Morbihan" },
     { id: 3, url: img3, alt: "Famille jouant au mini-golf à Saint Armel" },

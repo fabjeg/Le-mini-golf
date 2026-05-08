@@ -28,24 +28,17 @@ export const mockData = {
 
     pricing: [
         {
-            id: 4,
-            category: "Pour les petits",
-            price: "4€",
-            description: "moins de 7 ans",
+            id: 1,
+            category: "Tarif unique",
+            price: "7€",
+            description: "Par joueur",
             features: [],
         },
         {
             id: 2,
-            category: "Pour les moyens",
-            price: "5.50€",
-            description: "7 à 15 ans",
-            features: [],
-        },
-        {
-            id: 1,
-            category: "Pour les grands",
-            price: "7€",
-            description: "16 ans et plus",
+            category: "Accompagnateur",
+            price: "3€",
+            description: "Sans partie",
             features: [],
         },
     ],
