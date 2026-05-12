@@ -50,31 +50,6 @@ export const mockData = {
                 hours: [{ day: "Tous les jours", hours: "10h à 20h" }],
                 showWeatherNotice: false,
             },
-            {
-                title: "Du 1er septembre au 15 octobre",
-                hours: [{ day: "Week-ends & Mercredis", hours: "10h à 18h" }],
-                showWeatherNotice: true,
-            },
-            {
-                title: "Vacances de la Toussaint",
-                hours: [{ day: "Du 23 octobre au 2 novembre", hours: "10h à 18h" }],
-                showWeatherNotice: true,
-            },
-            {
-                title: "Vacances d'hiver",
-                hours: [{ day: "Du 7 février au 8 mars", hours: "10h à 18h" }],
-                showWeatherNotice: true,
-            },
-            {
-                title: "Du 4 mars au 1er avril",
-                hours: [{ day: "Mercredis & week-ends", hours: "14h à 18h" }],
-                showWeatherNotice: true,
-            },
-            {
-                title: "Vacances de Pâques",
-                hours: [{ day: "Du 4 avril au 4 mai", hours: "10h à 18h" }],
-                showWeatherNotice: true,
-            },
         ],
     },
 

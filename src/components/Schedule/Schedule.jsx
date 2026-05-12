@@ -13,7 +13,7 @@ const Schedule = () => {
                         Nos <span className="gradient-text">Horaires</span>
                     </h2>
                     <p className="schedule-subtitle">
-                        Nous vous accueillons toute l'année avec des horaires adaptés aux saisons
+                        Nous vous accueillons en juillet et août, tous les jours de 10h à 20h
                     </p>
                 </div>
 
