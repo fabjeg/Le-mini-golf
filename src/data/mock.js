@@ -54,7 +54,6 @@ export const mockData = {
     },
 
     notes: [
-        "Fermeture le 25 décembre et 1er janvier",
         "Dernière admission 1h avant la fermeture",
         "Réservation recommandée le week-end",
     ],
