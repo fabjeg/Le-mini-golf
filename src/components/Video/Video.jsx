@@ -11,9 +11,6 @@ const Video = () => {
                     <h2 className="video-title">
                         Notre <span className="gradient-text">Vidéo</span>
                     </h2>
-                    <p className="video-subtitle">
-                        Plongez dans l'ambiance du mini-golf en vidéo
-                    </p>
                 </div>
 
                 <a
