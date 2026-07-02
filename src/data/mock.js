@@ -44,6 +44,7 @@ export const mockData = {
     ],
 
     schedule: {
+        announcement: "Nous aurons le plaisir de vous accueillir le dimanche 5 juillet !",
         periods: [
             {
                 title: "Juillet - Août",

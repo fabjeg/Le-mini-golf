@@ -4,6 +4,7 @@ import Presentation from '../components/Presentation/Presentation';
 import Pricing from '../components/Pricing/Pricing';
 import Schedule from '../components/Schedule/Schedule';
 import Gallery from '../components/Gallery/Gallery';
+import Video from '../components/Video/Video';
 import PracticalInfo from '../components/PracticalInfo/PracticalInfo';
 import Footer from '../components/Footer/Footer';
 
@@ -17,6 +18,7 @@ export default function Home() {
                 <Pricing />
                 <Schedule />
                 <Gallery />
+                <Video />
                 <PracticalInfo />
             </main>
             <Footer />

@@ -3,7 +3,7 @@ import { mockData } from '../../data/mock';
 import './Schedule.css';
 
 const Schedule = () => {
-    const { periods } = mockData.schedule;
+    const { periods, announcement } = mockData.schedule;
 
     return (
         <section id="horaires" className="schedule-section">
@@ -16,6 +16,12 @@ const Schedule = () => {
                         Nous vous accueillons en juillet et août, tous les jours de 10h à 20h
                     </p>
                 </div>
+
+                {announcement && (
+                    <div className="schedule-announcement">
+                        <span>{announcement}</span>
+                    </div>
+                )}
 
                 <div className="schedule-list">
                     {periods.map((period, index) => (
