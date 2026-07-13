@@ -44,11 +44,14 @@ export const mockData = {
     ],
 
     schedule: {
-        announcement: "Nous aurons le plaisir de vous accueillir le dimanche 5 juillet !",
+        announcement: "",
         periods: [
             {
                 title: "Juillet - Août",
-                hours: [{ day: "Tous les jours", hours: "10h à 20h" }],
+                hours: [
+                    { day: "Du lundi au vendredi", hours: "10h à 20h" },
+                    { day: "Samedi et dimanche", hours: "Fermé" },
+                ],
                 showWeatherNotice: false,
             },
         ],
@@ -56,6 +59,6 @@ export const mockData = {
 
     notes: [
         "Dernière admission 1h avant la fermeture",
-        "Réservation recommandée le week-end",
+        "Fermé le week-end",
     ],
 };
