@@ -13,7 +13,7 @@ const Schedule = () => {
                         Nos <span className="gradient-text">Horaires</span>
                     </h2>
                     <p className="schedule-subtitle">
-                        Nous vous accueillons en juillet et août, du lundi au vendredi de 10h à 20h. Fermé le week-end.
+                        Nous vous accueillons 7j/7 en juillet et août : du dimanche au jeudi de 10h à 21h30, le vendredi et le samedi de 10h à 19h.
                     </p>
                 </div>
 

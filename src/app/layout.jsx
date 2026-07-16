@@ -11,7 +11,7 @@ const poppins = Poppins({
 export const metadata = {
     title: 'Le Mini Golf Du Golfe Du Morbihan | Saint Armel - Parcours 18 Trous',
     description:
-        'Découvrez notre parcours de mini-golf unique à Saint Armel (56450) avec 18 trous créatifs et colorés. Parfait pour toute la famille ! Ouvert juillet-août du lundi au vendredi (fermé le week-end). Tarifs : 4€ à 7€.',
+        'Découvrez notre parcours de mini-golf unique à Saint Armel (56450) avec 18 trous créatifs et colorés. Parfait pour toute la famille ! Ouvert 7j/7 en juillet-août. Tarifs : 4€ à 7€.',
     keywords:
         'mini golf, Saint Armel, Golfe du Morbihan, mini-golf Morbihan, loisirs famille Bretagne, activité enfants 56, parcours 18 trous, mini golf Vannes, Sarzeau loisirs',
     authors: [{ name: 'Le Mini Golf Du Golfe Du Morbihan' }],
@@ -75,9 +75,17 @@ const schema = {
     openingHoursSpecification: [
         {
             '@type': 'OpeningHoursSpecification',
-            dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+            dayOfWeek: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday'],
             opens: '10:00',
-            closes: '20:00',
+            closes: '21:30',
+            validFrom: '2025-07-01',
+            validThrough: '2025-08-31',
+        },
+        {
+            '@type': 'OpeningHoursSpecification',
+            dayOfWeek: ['Friday', 'Saturday'],
+            opens: '10:00',
+            closes: '19:00',
             validFrom: '2025-07-01',
             validThrough: '2025-08-31',
         },

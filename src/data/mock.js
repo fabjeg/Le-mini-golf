@@ -49,8 +49,8 @@ export const mockData = {
             {
                 title: "Juillet - Août",
                 hours: [
-                    { day: "Du lundi au vendredi", hours: "10h à 20h" },
-                    { day: "Samedi et dimanche", hours: "Fermé" },
+                    { day: "Du dimanche au jeudi", hours: "10h à 21h30" },
+                    { day: "Vendredi et samedi", hours: "10h à 19h" },
                 ],
                 showWeatherNotice: false,
             },
@@ -59,6 +59,6 @@ export const mockData = {
 
     notes: [
         "Dernière admission 1h avant la fermeture",
-        "Fermé le week-end",
+        "Ouvert 7j/7",
     ],
 };
