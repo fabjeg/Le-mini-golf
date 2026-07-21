@@ -13,6 +13,24 @@ import 'swiper/css/effect-coverflow';
 
 import './Gallery.css';
 
+import golf05 from '../../assets/gallery/golf-05.jpg';
+import golf06 from '../../assets/gallery/golf-06.jpg';
+import golf07 from '../../assets/gallery/golf-07.jpg';
+import golf08 from '../../assets/gallery/golf-08.jpg';
+import golf09 from '../../assets/gallery/golf-09.jpg';
+import golf10 from '../../assets/gallery/golf-10.jpg';
+import golf11 from '../../assets/gallery/golf-11.jpg';
+import golf12 from '../../assets/gallery/golf-12.jpg';
+import golf13 from '../../assets/gallery/golf-13.jpg';
+import golf14 from '../../assets/gallery/golf-14.jpg';
+import golf15 from '../../assets/gallery/golf-15.jpg';
+import golf16 from '../../assets/gallery/golf-16.jpg';
+import golf17 from '../../assets/gallery/golf-17.jpg';
+import golf18 from '../../assets/gallery/golf-18.jpg';
+import golf19 from '../../assets/gallery/golf-19.jpg';
+import golf20 from '../../assets/gallery/golf-20.jpg';
+import golf21 from '../../assets/gallery/golf-21.jpg';
+
 import img1 from '../../assets/img_1-converti-depuis-jpg.webp';
 import img2 from '../../assets/img_2-converti-depuis-jpg.webp';
 import img3 from '../../assets/img_3-converti-depuis-jpg.webp';
@@ -35,26 +53,43 @@ import img19 from '../../assets/img_19.jpeg';
 import img20 from '../../assets/img_20.jpeg';
 
 const gallery = [
-    { id: 13, url: img13, alt: "Vue d'ensemble du parcours de mini-golf en plein air" },
-    { id: 14, url: img14, alt: "Joueurs au mini-golf au coucher du soleil" },
-    { id: 15, url: img15, alt: "Groupe jouant au mini-golf en soirée" },
-    { id: 16, url: img16, alt: "Enfant jouant au mini-golf sur le parcours bleu" },
-    { id: 17, url: img17, alt: "Partie de mini-golf en famille dans le Morbihan" },
-    { id: 18, url: img18, alt: "Étang et canards dans le cadre du mini-golf" },
-    { id: 19, url: img19, alt: "Famille avec enfants profitant du mini-golf" },
-    { id: 20, url: img20, alt: "Duo de joueuses sur le parcours de mini-golf" },
-    { id: 1, url: img1, alt: "Parcours de mini-golf coloré avec obstacles créatifs" },
-    { id: 2, url: img2, alt: "Trou de mini-golf thématique au parcours du Golfe du Morbihan" },
-    { id: 3, url: img3, alt: "Famille jouant au mini-golf à Saint Armel" },
-    { id: 4, url: img4, alt: "Obstacle original sur le parcours de mini-golf" },
-    { id: 5, url: img5, alt: "Vue d'ensemble du parcours de mini-golf 18 trous" },
-    { id: 6, url: img6, alt: "Trou de mini-golf avec décoration maritime" },
-    { id: 7, url: img7, alt: "Activité mini-golf en famille dans le Morbihan" },
-    { id: 8, url: img8, alt: "Parcours de mini-golf adapté aux enfants" },
-    { id: 9, url: img9, alt: "Zone de jeu du mini-golf du Golfe du Morbihan" },
-    { id: 10, url: img10, alt: "Mini-golf Saint Armel - loisir pour tous les âges" },
-    { id: 11, url: img11, alt: "Trou créatif du parcours de mini-golf breton" },
-    { id: 12, url: img12, alt: "Obstacle ludique sur le parcours de 18 trous" },
+    { id: 'n5', url: golf05, alt: "Vue d'ensemble du parcours de mini-golf en plein air" },
+    { id: 'n6', url: golf06, alt: "Trou de mini-golf thématique au parcours du Golfe du Morbihan" },
+    { id: 'n7', url: golf07, alt: "Famille jouant au mini-golf à Saint Armel" },
+    { id: 'n8', url: golf08, alt: "Obstacle original sur le parcours de mini-golf" },
+    { id: 'n9', url: golf09, alt: "Vue d'ensemble du parcours de mini-golf 18 trous" },
+    { id: 'n10', url: golf10, alt: "Trou de mini-golf avec décoration maritime" },
+    { id: 'n11', url: golf11, alt: "Activité mini-golf en famille dans le Morbihan" },
+    { id: 'n12', url: golf12, alt: "Parcours de mini-golf adapté aux enfants" },
+    { id: 'n13', url: golf13, alt: "Zone de jeu du mini-golf du Golfe du Morbihan" },
+    { id: 'n14', url: golf14, alt: "Mini-golf Saint Armel - loisir pour tous les âges" },
+    { id: 'n15', url: golf15, alt: "Trou créatif du parcours de mini-golf breton" },
+    { id: 'n16', url: golf16, alt: "Obstacle ludique sur le parcours de 18 trous" },
+    { id: 'n17', url: golf17, alt: "Vue rapprochée d'un trou du parcours de mini-golf" },
+    { id: 'n18', url: golf18, alt: "Étang et canards dans le cadre du mini-golf" },
+    { id: 'n19', url: golf19, alt: "Famille avec enfants profitant du mini-golf" },
+    { id: 'n20', url: golf20, alt: "Duo de joueuses sur le parcours de mini-golf" },
+    { id: 'n21', url: golf21, alt: "Partie de mini-golf en famille dans le Morbihan" },
+    { id: 'o13', url: img13, alt: "Vue d'ensemble du parcours de mini-golf en plein air" },
+    { id: 'o14', url: img14, alt: "Joueurs au mini-golf au coucher du soleil" },
+    { id: 'o15', url: img15, alt: "Groupe jouant au mini-golf en soirée" },
+    { id: 'o16', url: img16, alt: "Enfant jouant au mini-golf sur le parcours bleu" },
+    { id: 'o17', url: img17, alt: "Partie de mini-golf en famille dans le Morbihan" },
+    { id: 'o18', url: img18, alt: "Étang et canards dans le cadre du mini-golf" },
+    { id: 'o19', url: img19, alt: "Famille avec enfants profitant du mini-golf" },
+    { id: 'o20', url: img20, alt: "Duo de joueuses sur le parcours de mini-golf" },
+    { id: 'o1', url: img1, alt: "Parcours de mini-golf coloré avec obstacles créatifs" },
+    { id: 'o2', url: img2, alt: "Trou de mini-golf thématique au parcours du Golfe du Morbihan" },
+    { id: 'o3', url: img3, alt: "Famille jouant au mini-golf à Saint Armel" },
+    { id: 'o4', url: img4, alt: "Obstacle original sur le parcours de mini-golf" },
+    { id: 'o5', url: img5, alt: "Vue d'ensemble du parcours de mini-golf 18 trous" },
+    { id: 'o6', url: img6, alt: "Trou de mini-golf avec décoration maritime" },
+    { id: 'o7', url: img7, alt: "Activité mini-golf en famille dans le Morbihan" },
+    { id: 'o8', url: img8, alt: "Parcours de mini-golf adapté aux enfants" },
+    { id: 'o9', url: img9, alt: "Zone de jeu du mini-golf du Golfe du Morbihan" },
+    { id: 'o10', url: img10, alt: "Mini-golf Saint Armel - loisir pour tous les âges" },
+    { id: 'o11', url: img11, alt: "Trou créatif du parcours de mini-golf breton" },
+    { id: 'o12', url: img12, alt: "Obstacle ludique sur le parcours de 18 trous" },
 ];
 
 const Gallery = () => {
