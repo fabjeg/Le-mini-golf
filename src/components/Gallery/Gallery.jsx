@@ -93,9 +93,11 @@ const gallery = [
 ];
 
 const Gallery = () => {
-    const [selectedImage, setSelectedImage] = useState(null);
-    const openLightbox = (image) => setSelectedImage(image);
-    const closeLightbox = () => setSelectedImage(null);
+    const [selectedIndex, setSelectedIndex] = useState(null);
+    const openLightbox = (index) => setSelectedIndex(index);
+    const closeLightbox = () => setSelectedIndex(null);
+    const showPrevImage = () => setSelectedIndex((i) => (i - 1 + gallery.length) % gallery.length);
+    const showNextImage = () => setSelectedIndex((i) => (i + 1) % gallery.length);
 
     const prevRef = useRef(null);
     const nextRef = useRef(null);
@@ -104,6 +106,19 @@ const Gallery = () => {
     useEffect(() => {
         setNavReady(true);
     }, []);
+
+    useEffect(() => {
+        if (selectedIndex === null) return;
+        const handleKeyDown = (e) => {
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowLeft') showPrevImage();
+            if (e.key === 'ArrowRight') showNextImage();
+        };
+        window.addEventListener('keydown', handleKeyDown);
+        return () => window.removeEventListener('keydown', handleKeyDown);
+    }, [selectedIndex]);
+
+    const selectedImage = selectedIndex !== null ? gallery[selectedIndex] : null;
 
     return (
         <section id="galerie" className="gallery-section">
@@ -143,9 +158,9 @@ const Gallery = () => {
                         className="gallery-swiper"
                         watchSlidesProgress={false}
                     >
-                        {gallery.map((image) => (
+                        {gallery.map((image, index) => (
                             <SwiperSlide key={image.id}>
-                                <div className="gallery-slide" onClick={() => openLightbox(image)}>
+                                <div className="gallery-slide" onClick={() => openLightbox(index)}>
                                     <Image
                                         src={image.url}
                                         alt={image.alt}
@@ -178,12 +193,26 @@ const Gallery = () => {
                             <button onClick={closeLightbox} className="lightbox-close" aria-label="Fermer">
                                 <X size={24} />
                             </button>
+                            <button
+                                onClick={showPrevImage}
+                                className="lightbox-nav-button lightbox-prev-button"
+                                aria-label="Photo précédente"
+                            >
+                                <ChevronLeft size={28} />
+                            </button>
                             {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img
                                 src={selectedImage.url.src}
                                 alt={selectedImage.alt}
                                 className="lightbox-image"
                             />
+                            <button
+                                onClick={showNextImage}
+                                className="lightbox-nav-button lightbox-next-button"
+                                aria-label="Photo suivante"
+                            >
+                                <ChevronRight size={28} />
+                            </button>
                         </div>
                     </div>
                 )}

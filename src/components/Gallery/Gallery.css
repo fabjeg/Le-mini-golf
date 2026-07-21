@@ -179,6 +179,36 @@
     background: rgba(255, 255, 255, 0.4);
 }
 
+.lightbox-nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3rem;
+    height: 3rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    z-index: 20;
+}
+
+.lightbox-nav-button:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.lightbox-prev-button {
+    left: 1rem;
+}
+
+.lightbox-next-button {
+    right: 1rem;
+}
+
 .lightbox-image {
     width: 100%;
     height: auto;
