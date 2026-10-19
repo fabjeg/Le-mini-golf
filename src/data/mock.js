@@ -44,8 +44,16 @@ export const mockData = {
     ],
 
     schedule: {
-        announcement: "",
+        announcement: "🍂 Vacances de la Toussaint : ouvert tous les jours de 11h à 18h !",
+        closure: "Après les vacances de la Toussaint, le mini-golf ferme pour la fin de la saison 2026. Réouverture à Pâques 2027 — à très bientôt !",
         periods: [
+            {
+                title: "Vacances de la Toussaint",
+                hours: [
+                    { day: "Tous les jours", hours: "11h à 18h" },
+                ],
+                showWeatherNotice: true,
+            },
             {
                 title: "Juillet - Août",
                 hours: [

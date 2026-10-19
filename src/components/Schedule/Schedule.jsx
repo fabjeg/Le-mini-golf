@@ -3,7 +3,7 @@ import { mockData } from '../../data/mock';
 import './Schedule.css';
 
 const Schedule = () => {
-    const { periods, announcement } = mockData.schedule;
+    const { periods, announcement, closure } = mockData.schedule;
 
     return (
         <section id="horaires" className="schedule-section">
@@ -13,7 +13,7 @@ const Schedule = () => {
                         Nos <span className="gradient-text">Horaires</span>
                     </h2>
                     <p className="schedule-subtitle">
-                        Nous vous accueillons 7j/7 en juillet et août : du dimanche au jeudi de 10h à 21h30, le vendredi et le samedi de 10h à 19h.
+                        Pour les vacances de la Toussaint, nous vous accueillons tous les jours de 11h à 18h.
                     </p>
                 </div>
 
@@ -56,6 +56,12 @@ const Schedule = () => {
                     ))}
                 </div>
 
+                {closure && (
+                    <div className="schedule-closure">
+                        <span role="img" aria-label="fermeture hivernale">❄️</span>
+                        <span>{closure}</span>
+                    </div>
+                )}
 
             </div>
         </section>

@@ -59,6 +59,23 @@
     text-align: center;
 }
 
+.schedule-closure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    max-width: 600px;
+    margin: 2.5rem auto 0;
+    padding: 1rem 1.5rem;
+    background: #fff7ed;
+    border: 1px solid #fed7aa;
+    border-radius: 0.75rem;
+    color: #9a3412;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+}
+
 .schedule-list {
     text-align: left;
     display: flex;
